@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: Roboto, Arial;
+	height: 100%;
+	
+}
+
+body {
+	background: rgba(149, 185, 243, 0.986);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-font-smoothing:antialized;
+	-webkit-tap-highlight-color: transparent;
+	
+}
+
+svg {
+	width: 25px;
+	height: 25px;
+}
+
+
+button {
+	font-size: 1.5em;
+	border-radius: 50px;
+	padding: 15px 22px;
+	margin-top: 2vh;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+
+input {
+	padding: 10px;
+}
+
+.main-content {
+	width: 420px;
+	border-radius: 1rem;
+	background-color: #212532;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+
+
+
+
+.input-calc {
+	grid-column: 1/5;
+	height: 12vh;
+	border-radius: 10px;
+	font-size: 2em;
+	text-align: right;
+	outline: none;
+	color: rgb(255, 255, 255);
+	background-color: #272f48;
+	border: none;
+	margin: 20px;
+}
+
+::placeholder {
+	color: white;
+}
+
+
+
+.button, .number .symbol {
+	text-align: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 2em;
+	transition: .1s ease-in-out;
+	margin-left: 10px;
+	margin-right: 15px;
+	margin-bottom: 25px;
+	aspect-ratio: 1;
+		
+}
+
+.number {
+	background-color: rgba(0, 0, 0, 0.173)
+}
+
+.number:hover {
+	background-color: rgba(0, 0, 0, 0.401);
+}
+
+.symbol {
+	background-color: rgb(102, 70, 219);
+}
+
+.symbol:hover {
+	background-color: rgb(68, 57, 173)
+}
